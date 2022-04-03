@@ -1,0 +1,167 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "poppins", sans-serif;
+}
+body{
+    background-color: #f4fff8;
+}
+.header{
+    position: fixed;
+    top: 0;
+    height: 90px;
+    width: 100%;
+    background-color:rgba(2, 19, 89,0.9);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header img{
+    width: 60px;
+    height: 60px;
+    margin-left: 20px;
+}
+.logo{
+    display: flex;
+    align-items: center;
+}
+.par P{
+    font-size: 150%;
+    color:#F9A9F2;
+    font-weight: bold;
+    margin-left: 10px;
+}
+.par a{
+	text-decoration: none;
+}
+.link a {
+    margin-right: 20px;
+    padding: 15px 10px;
+    font-size: 18px;
+    color:#F9A9F2;
+    font-weight: bold;
+    border-radius: 8px;
+    text-decoration: none;
+}
+.link a:hover{
+    background-color:rgba(1, 1, 26,0.4);
+    color: springgreen;
+}
+.container{
+    margin: 0 auto;
+    margin-top: 200px;
+    width: 60%;
+    padding: 20px;
+    height: 500px;
+    background-color:white;
+    border-radius: 20px;
+    box-shadow: -15px 15px 15px 5px rgba(0,0,0,0.1), 15px  15px 15px 5px rgba(0,0,0,0.1);
+}
+.container h1{
+    width: 100%;
+    color: rgba(2, 19, 89,0.9);
+    font-size:36px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+.container .row100{
+    position: relative;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+}
+.container .row100 .col{
+    position: relative;
+    width: 100%;
+    padding: 0 10px;
+    margin: 30px 0 10px;
+    transition: 0.5s;
+}
+.container .row100 .inputBox{
+    position: relative;
+    width: 100%;
+    height: 40px;
+    color:rgba(2, 19, 89,0.9);
+}
+.container .row100 .inputBox input,
+.container .row100 .inputBox.textarea textarea {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    box-shadow: none;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    padding: 0 10px;
+    z-index: 1;
+    color:#000;
+}
+.container .row100 .inputBox .text{
+    position: absolute;
+    top: 0;
+    left: 0;
+    line-height: 40px;
+    font-size: 18px;
+    padding: 0 10px;
+    display: block;
+    transition: 0.5s;
+    pointer-events: none;
+}
+.container .row100 .inputBox input:focus + .text,
+.container .row100 .inputBox input:valid + .text{
+    top: -35px;
+    left: -10px;
+}
+.container .row100 .inputBox .line{
+    position: absolute;
+    bottom: 0;
+    display: block;
+    width: 100%;
+    height: 2px;
+    background:#f4fff8;
+    border-radius: 2px;
+    transition: 0.5s;
+    pointer-events: none;
+    border-width: 1px;
+    border-color: rgba(2, 19, 89,0.9);
+    border-style: solid;
+}
+.container .row100 .inputBox input:focus ~ .line,
+.container .row100 .inputBox input:valid ~ .line{
+    height: 100%;
+}
+.container .row100 .inputBox.textarea{
+    position: relative;
+    width: 100%;
+    height: 100px;
+    padding: 10px 0;
+}
+.container .row100 .inputBox.textarea textarea{
+    height: 100%;
+    resize: none;
+}
+.container .row100 .inputBox textarea:focus + .text,
+.container .row100 .inputBox textarea:valid + .text{
+    top: -35px;
+    left: -10px;
+}
+.container .row100 .inputBox textarea:focus ~ .line,
+.container .row100 .inputBox textarea:valid ~ .line{
+    height: 100%;
+}
+input[type="submit"]{
+    border:none;
+    padding: 10px 50px;
+    cursor: pointer;
+    outline: none;
+    background:rgba(2, 19, 89,0.9);
+    color:#F9A9F2;
+    font-size: 20px;
+    border-radius: 10px;
+}
+input[type="submit"]:hover{
+    background-color:rgba(3, 3, 37, 0.8);
+    color: springgreen;
+}

@@ -1,0 +1,245 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body{
+    min-height: 100vh;
+    min-width: 100vw;
+    background-color:#f4fff8;
+}
+.header{
+    position: fixed;
+    top: 0;
+    height: 90px;
+    width: 100%;
+    background-color:rgba(2, 19, 89,0.9);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header img{
+    width: 60px;
+    height: 60px;
+    margin-left: 20px;
+}
+.logo{
+    display: flex;
+    align-items: center;
+}
+.par P{
+    font-size: 150%;
+    color:#F9A9F2;
+    font-weight: bold;
+    margin-left: 10px;
+}
+.link a {
+    margin-right: 20px;
+    padding: 15px 10px;
+    font-size: 18px;
+    color:#F9A9F2;
+    font-weight: bold;
+    border-radius: 8px;
+    text-decoration: none;
+}
+.link a:hover{
+    background-color:rgba(1, 1, 26,0.4);
+    color: springgreen;
+}
+.Landing-page{
+    width:100%;
+    height: 500px;
+    margin-top: 90px;
+    padding-left: 150px;
+    padding-top: 150px;
+    background-image: url("../Images/study.jpeg");
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    border-radius:0 0 50px 50px;
+    border-width: 5px;
+    border-color: rgba(2, 19, 89,0.9);
+    border-style: solid;
+    
+}
+.text h1{
+    color:white;
+    font-size: 50px;
+}
+.text h2{
+    color:white;
+    font-size: 50px;
+}
+.text p{
+    color:white;
+    font-size: 20px;
+    margin-top: 10px;
+}
+.button{
+    margin-top: 80px;
+    margin-right: 30px;
+}
+.button a{
+    padding: 30px 40px;
+    background-color:#0a043d;
+    margin-right: 30px;
+    color:#F9A9F2;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 8px;
+    text-decoration: none;
+}
+.button a:hover{
+    background-color:rgba(3, 3, 37, 0.8);
+    color: springgreen;
+}
+#Page{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 0 auto;
+    background-color:#f4fff8;
+    height: 100%;
+    width: 100%;
+    padding-bottom: 20px;
+    padding-top: 150px;
+    margin-bottom: 100px;
+}
+.infantil,
+ .Fundamental, .Medio{
+    height: 620px;
+    width: 500px;
+    background-color:white;
+    border-radius: 20px;
+    box-shadow: -15px 15px 15px 5px rgba(0,0,0,0.1), 15px  15px 15px 5px rgba(0,0,0,0.1);
+}
+.header1{
+    height: 100px;
+    background:#0a043d;
+    background-image:url("../Images/language\ learning.png");
+    background-size: 80px 80px;
+    background-repeat: no-repeat;
+    background-position:20px;
+    border-radius: 10px;
+}
+.header2{
+    height: 100px;
+    background:#0a043d;
+    background-image:url("../Images/science\ and\ tech.png");
+    background-size: 80px 80px;
+    background-repeat: no-repeat;
+    background-position:20px;
+    border-radius: 10px;
+}
+.header3{
+    height: 100px;
+    background:#0a043d;
+    background-image:url("../Images/graduated.png");
+    background-size: 80px 80px;
+    background-repeat: no-repeat;
+    background-position:20px;
+    border-radius: 10px;
+}
+.header1,.header2,
+.header3>p{
+   color:white;
+   padding-top: 40px;
+   padding-left: 130px;
+   font-size: 25px;
+   font-weight: bold;
+}
+.infantil>.texto h6{
+    text-align: center;
+    color:#0a043d;;
+    margin-top: 20px;
+    font-size: 30px;
+}
+.Fundamental>.texto h6{
+    text-align: center;
+    color:#0a043d;;
+    margin-top: 20px;
+    font-size: 30px;
+}
+.Medio>.texto h6{
+    text-align: center;
+    color:#0a043d;;
+    margin-top: 20px;
+    font-size: 30px;
+}
+.texto>p{
+    margin-top: 20px; 
+    color:black;
+    margin-left: 80px;
+    font-size: 22px;
+    font-weight: bold;
+}
+.texto>h4{
+    margin-top: 20px;
+    color:black;
+    text-align: center;
+    font-size: 25px;
+}
+.button2{
+    text-align: center;
+    margin-top: 50px;
+}
+.button2 a{
+    padding: 20px 20px;
+    background-color:#0a043d;
+    color:#F9A9F2;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 8px;
+    text-decoration: none;
+}
+.button2 a:hover{
+    background-color:rgba(3, 3, 37, 0.8);
+    color: springgreen;
+}
+#Infor{
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+    width:100%;
+    margin-right: 100px;
+    height: 100%;
+}
+#Infor h3{
+    color:#e209d0;
+    margin:50px 0;
+    font-size: 40px;
+    text-align: center;
+}
+#Infor img{
+    width: 50px;
+    height: 50px;
+    margin: 25px 0;
+}
+#Infor a{
+    text-decoration: none;
+    color: #070963;
+}
+#Infor a:hover{
+    color:#F9A9F2;
+}
+.sobre{
+    width: 800px;
+    height: 600px;
+    font-size: 28px;
+    color: #070963;
+}
+.sobre h4{
+    margin-bottom: 10px;
+}
+.contacto, .redes{
+    text-align: center;
+    width: 400px;
+    height: 600px;
+    font-size: 28px;
+}
+.contacto p{
+    color: #070963;
+}
